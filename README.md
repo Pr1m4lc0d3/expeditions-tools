@@ -11,6 +11,12 @@ Not affiliated with or endorsed by Saber Interactive.
 | **Specialist builder** | Builds custom specialists: portraits, abilities, balance and mod.io publishing. | [expeditions-specialist](https://github.com/Pr1m4lc0d3/expeditions-specialist) |
 | **Map and modding guide** | A plain-language guide to building maps and mods. | [expeditions-map-guide](https://pr1m4lc0d3.github.io/expeditions-map-guide/) |
 
+**Some tools depend on outside services you set up yourself.** Building your
+own 3D model needs a paid [Meshy](https://www.meshy.ai/) account, Blender, and
+optionally OpenAI's Codex CLI for concept images. None of these ships with the
+tools. Each tool's README lists what it needs and what it costs; read it before
+you install.
+
 The tools are also listed on mod.io:
 [Expeditions Modding Tools](https://mod.io/g/expeditions/m/expeditions-modding-tools-specialists-trucks).
 
