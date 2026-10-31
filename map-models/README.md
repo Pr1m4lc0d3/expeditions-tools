@@ -53,7 +53,8 @@ python import_model.py shed.glb --name my_shed --height 4
 
 Then **restart the editor** and search Select Asset for the bare name
 (`my_shed`, without the `\Media` it lists with). A new model can show pure white
-until the editor has converted it; restart once more and it comes up textured.
+until the editor has converted it: click **Rebuild terrain** and it comes up textured,
+with no second restart.
 
 | Option | Use it when |
 |---|---|

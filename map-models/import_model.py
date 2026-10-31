@@ -130,7 +130,7 @@ def main() -> int:
         return r.returncode
     if not a.dry_run:
         print(f"\nInstalled '{a.name}'. Restart the editor, then search Select Asset for: {a.name}")
-        print("It may show pure white until the editor has converted it; restart once more if so.")
+        print("If it shows pure white, click Rebuild terrain in the editor and it comes up textured.")
         print("After you place it and Pack terrain, run: python after_pack.py")
     return 0
 
