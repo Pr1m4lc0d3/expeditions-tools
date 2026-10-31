@@ -162,6 +162,23 @@ def media_root(game: str | None = None) -> Path:
     if os.environ.get("SABER_MEDIA"):
         return Path(os.environ["SABER_MEDIA"])
     cfg = config()
+    game = which_game(game)
+    if cfg.get("media"):
+        return Path(cfg["media"])
+    g = GAMES[game.lower()]
+    return _documents() / "My Games" / g.my_games / "Media"
+
+
+_ANNOUNCED: set = set()
+
+
+def which_game(game: str | None = None) -> str:
+    """The game to work on: the one asked for, SABER_GAME, toolkit.json, or the
+    only one installed. Every lookup goes through here, so the install folder
+    and the Media folder can never come from two different games. (game_dir
+    once had its own copy that returned nothing when both games were present,
+    so the converter was "not found" on any machine with both installed.)"""
+    cfg = config()
     if not game:
         game = os.environ.get("SABER_GAME") or cfg.get("game")
     if not game:
@@ -179,10 +196,12 @@ def media_root(game: str | None = None) -> Path:
                                .glob("*")) ]
             if len(withwork) == 1:
                 game = withwork[0]
-                import sys as _sys
-                print(f"[gamepaths] both games present; using '{game}' because it "
-                      f"has map projects. Set SABER_GAME to override.",
-                      file=_sys.stderr)
+                if game not in _ANNOUNCED:   # once per run, not once per lookup
+                    _ANNOUNCED.add(game)
+                    import sys as _sys
+                    print(f"[gamepaths] both games present; using '{game}' because it "
+                          f"has map projects. Set SABER_GAME to override.",
+                          file=_sys.stderr)
             else:
                 raise RuntimeError(
                     "Both games are installed and nothing says which to use. "
@@ -193,10 +212,7 @@ def media_root(game: str | None = None) -> Path:
             raise RuntimeError(
                 "No supported game found under Documents/My Games. "
                 "Set SABER_MEDIA to the Media folder directly.")
-    if cfg.get("media"):
-        return Path(cfg["media"])
-    g = GAMES[game.lower()]
-    return _documents() / "My Games" / g.my_games / "Media"
+    return game.lower()
 
 
 def installed_games() -> list[str]:
@@ -216,14 +232,11 @@ def game_dir(game: str | None = None) -> Path | None:
     cfg = config()
     if cfg.get("game_dir"):
         return Path(cfg["game_dir"])
-    if not game:
-        game = os.environ.get("SABER_GAME") or cfg.get("game")
-        if not game:
-            found = installed_games()
-            game = found[0] if len(found) == 1 else None
-    if not game:
+    try:
+        game = which_game(game)
+    except RuntimeError:
         return None
-    g = GAMES[game.lower()]
+    g = GAMES[game]
     roots = [Path(f"{d}:/") for d in "CDEFGH" if Path(f"{d}:/").exists()]
     roots += [Path(os.environ.get("ProgramFiles", "C:/Program Files")),
               Path(os.environ.get("ProgramFiles(x86)", "C:/Program Files (x86)"))]
@@ -256,7 +269,7 @@ def resource_converter(game: str | None = None) -> Path | None:
     d = game_dir(game)
     if not d:
         return None
-    g = GAMES[(game or os.environ.get("SABER_GAME") or "expeditions").lower()]
+    g = GAMES[which_game(game)]
     p = d / g.bin_subdir / "ResourceConverter.exe"
     return p if p.is_file() else None
 
@@ -265,7 +278,7 @@ def bin_editor(game: str | None = None) -> Path | None:
     d = game_dir(game)
     if not d:
         return None
-    g = GAMES[(game or os.environ.get("SABER_GAME") or "expeditions").lower()]
+    g = GAMES[which_game(game)]
     p = d / g.editor_subdir
     return p if p.is_dir() else None
 
