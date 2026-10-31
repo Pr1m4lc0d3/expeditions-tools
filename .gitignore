@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+toolkit.json
+out/
+build_reports/
+models/
+fob_build/
+*.pak
+*.pak.tmp
