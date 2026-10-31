@@ -5,6 +5,13 @@ after three weeks of failed builds. PebbleGas and Gimbo's Resource Scanner were
 built earlier by luck of the old toolchain. Follow every step, in order. Each one
 exists because skipping it broke a real build; the trap table says which.
 
+> **This recipe depends on outside services you set up and pay for yourself.**
+> Meshy (paid, 35 credits per model, billed by Meshy) builds the model, Blender
+> (free) cleans it, and the Codex CLI (OpenAI account) can make the concept
+> image. None of them comes with these tools. Read
+> [Before you install](../README.md#before-you-install-outside-services-you-set-up-yourself)
+> first.
+
 Tools: `fob-modules/`. Meshy files land in your Meshy store (`$MESHY_STORE`, or `meshy_store` in toolkit.json).
 Mods live in `Documents\My Games\Expeditions\Media\Mods`.
 

@@ -132,6 +132,12 @@ output. See `docs/recolour.md`.
 
 ## Path B, a custom 3D model
 
+⛔ **Path B spends the user's money on outside services.** Meshy is paid (35
+credits per model, billed by Meshy) and the Codex image step uses their OpenAI
+account. Neither ships with these tools. Before the first `meshy.py` or `gen`
+call, confirm the user has set up the service and agrees to the cost, and ask
+again before every retry. See "Before you install" in `README.md`.
+
 ⛔ **Follow `docs/custom-model.md` step by step.** It is the recipe proven
 in game on 2026-10-24, with every symptom mapped to its cause. In short:
 

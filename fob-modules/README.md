@@ -16,17 +16,45 @@ Not affiliated with or endorsed by Saber Interactive.
 |---|---|---|
 | **A vanilla model** | Your module, with its own stats and price, using a stock model | Python |
 | **A recoloured vanilla model** | A stock model in another colour, side by side with the stock one | Python |
-| **Your own 3D model** | A new building, from an image, through Meshy and Blender | Python, Blender, a Meshy API key |
+| **Your own 3D model** | A new building, from an image, through Meshy and Blender | Python, Blender, a paid Meshy account; optionally the Codex CLI for the concept image |
 
 Every route shares one descriptor (`BaseUpgradeDesc`) and one packing step.
+
+## Before you install: outside services you set up yourself
+
+The first two routes need nothing but Python and the game. **The third route
+depends on programs and paid services that are not part of this repository.**
+These tools do not include them, do not install them, and cannot set them up
+for you. Set each one up on your own, under your own account, before you start.
+
+| Dependency | Used for | What you have to do | Cost |
+|---|---|---|---|
+| **[Meshy](https://www.meshy.ai/)** (a 3D model generator, a third-party web service) | Turning your concept image into a 3D model (`meshy.py`) | Create a Meshy account, get API access, and save your API key where the tools look for it (see Requirements) | **Paid.** Billed by Meshy in credits. One model as these tools build it costs 35 credits: 30 to generate, 5 to remesh. Every retry costs again. Check Meshy's own pricing for what API access and credits cost today |
+| **[Codex CLI](https://github.com/openai/codex)** (OpenAI's command-line agent, used here as an image generator) | Making the concept image (`model_pipeline.py gen` and `back`) | Install Node.js, install the Codex CLI with npm, and sign in with an OpenAI account that has image generation | Counts against your OpenAI plan or usage. **Optional:** skip it by bringing your own image (see Quick start) |
+| **[Blender](https://www.blender.org/)** | Cleaning, re-baking, checking and converting the model | Install it. The tools find it, or set `BLENDER` | Free |
+
+Read these before you spend anything:
+
+- **Your images leave your computer.** `meshy.py` uploads your concept image to
+  Meshy's servers; the Codex step sends your prompt to OpenAI. Their terms,
+  privacy policies and rules on who owns the output apply, not this
+  repository's licence. Read them first, especially if you plan to sell or
+  publish what you make.
+- **Credits are spent the moment a command runs.** A failed or ugly result is
+  still billed. Nothing here asks for confirmation before calling Meshy.
+- **This project is not affiliated with Meshy or OpenAI** and has no say over
+  their prices, limits or availability. If either service changes its API,
+  plans or model, the matching step here can stop working until it is updated.
+- **No keys ship with these tools.** You supply your own, and they stay outside
+  this folder.
 
 ## Requirements
 
 - Windows, with Expeditions installed. The tools use the game's own
   `ResourceConverter` and read Saber's packed models.
 - Python 3.10 or newer: `pip install -r requirements.txt`
-- For your own model: Blender (any recent version) and a Meshy account. The
-  Meshy key is read from `%LOCALAPPDATA%\ExpeditionsToolkit\meshy_api_key` or
+- For your own model: Blender (any recent version) and a paid Meshy account
+  with API access (see above). The Meshy key is read from `%LOCALAPPDATA%\ExpeditionsToolkit\meshy_api_key` or
   `MESHY_API_KEY`, never from this folder.
 
 The tools find the game, its Media folder and Blender on their own. If they
