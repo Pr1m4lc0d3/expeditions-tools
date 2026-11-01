@@ -8,7 +8,7 @@ Not affiliated with or endorsed by Saber Interactive.
 |---|---|---|
 | **FOB module tools** | Builds custom base modules: a vanilla model with your own stats and price, a recoloured vanilla model, or your own 3D model, with the descriptor, store art and packing. | [fob-modules](fob-modules/) in this repository |
 | **Map model tools** | Puts your own 3D models on a map: one-command import from `.glb`, and the fix to run after every Pack terrain so the map loads. | [map-models](map-models/) in this repository |
-| **Vehicle importer** | Ports SnowRunner trucks into Expeditions: textures, bumpers, tyres and store artwork handled. | [expeditions-vehicle-importer](https://github.com/Pr1m4lc0d3/expeditions-vehicle-importer) |
+| **Vehicle importer** | Ports SnowRunner trucks into Expeditions: textures, bumpers, tyres, store artwork and engine sound handled, plus the Expeditions systems a SnowRunner truck lacks (gear limit, supplies cameras, garage tabs) and a guide to fitting each vehicle a rack for its gear. | [expeditions-vehicle-importer](https://github.com/Pr1m4lc0d3/expeditions-vehicle-importer) |
 | **Specialist builder** | Builds custom specialists: portraits, abilities, balance and mod.io publishing. | [expeditions-specialist](https://github.com/Pr1m4lc0d3/expeditions-specialist) |
 | **Map and modding guide** | A plain-language guide to building maps and mods. | [expeditions-map-guide](https://pr1m4lc0d3.github.io/expeditions-map-guide/) |
 
