@@ -1,0 +1,90 @@
+{
+    "ExternalData": [
+    ],
+    "SslType": "ObjectiveSettings",
+    "SslValue": {
+        "contractsSettings": [
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                    "mod_gateway_test_Find the Gate"
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "Gate Two",
+                "difficulty": 0,
+                "employer": "TVCompany",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "Gate Two Free Roam",
+                "prepayment": 0,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": {
+                            "$type": "FreeRoamSettings",
+                            "map": "~#@%$`*level_gate_two~#@%$`*",
+                            "uiDesc": "Gate Two"
+                        },
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "tips": [
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Gate Two",
+                "uiMinimapScreenshot": "mapAllLocked",
+                "wayLength": 0
+            }
+        ],
+        "employer": [
+        ],
+        "name": "objectiveSettings",
+        "tasksSettings": [
+        ]
+    }
+}

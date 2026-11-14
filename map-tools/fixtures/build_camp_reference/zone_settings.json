@@ -1,0 +1,429 @@
+{
+    "SslType": "MapWithZonesDesc",
+    "SslValue": {
+        "isNeedToBeCloacked": false,
+        "name": "~#@%$`*level_objectives~#@%$`*",
+        "zoneDesc": [
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "deploy",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyDeploy": {
+                        "$type": "ZonePropertyDeploy",
+                        "defaultDeployPoint": true,
+                        "deployCostMultiplier": 1,
+                        "fobModulesZones": [
+                        ],
+                        "fogOfWarUnlockRadius": 100,
+                        "fogOfWarUnlockRadiusTransparent": 150,
+                        "isAffectedByZoneSettings": true,
+                        "isShown": true,
+                        "mainBaseModuleInteractionZone": null,
+                        "maxTrucksNum": 1,
+                        "model": null,
+                        "supplyShopModuleInteractionZone": null,
+                        "warningRadius": 5,
+                        "zoneDiscoverability": null
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "FOB",
+                "needToShow": true,
+                "props": {
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "fake zone 1",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyInventoryStorage": {
+                        "$type": "ZonePropertyInventoryStorage",
+                        "allowPutConsumablesToHeavyInv": false,
+                        "alwaysSpawn": true,
+                        "capacity": 8,
+                        "electroSlotSettings": null,
+                        "expandedConsumablesCapacity": 6,
+                        "fuelSlotSettings": {
+                            "$type": "ConsumablesSlot",
+                            "chance": 0.75,
+                            "quantity": 80,
+                            "tradeFromTruckToZone": false
+                        },
+                        "heavyInvCapacity": 0,
+                        "isAffectedByAdditionalAirdropResourcesAbility": true,
+                        "isAffectedByAdditionalOutpostResourcesAbility": false,
+                        "isAffectedByZoneSettings": true,
+                        "isAtDeployZone": false,
+                        "isModelBreakageQuestProp": false,
+                        "isShown": true,
+                        "model": null,
+                        "repairsSlotSettings": {
+                            "$type": "ConsumablesSlot",
+                            "chance": 0.3,
+                            "quantity": 200,
+                            "tradeFromTruckToZone": false
+                        },
+                        "slotsSettings": [
+                            {
+                                "$type": "ZoneItemSlot",
+                                "possibleItems": [
+                                    {
+                                        "$type": "ZoneItem",
+                                        "chance": 1,
+                                        "itemName": "Anchor",
+                                        "type": 4
+                                    }
+                                ]
+                            },
+                            {
+                                "$type": "ZoneItemSlot",
+                                "possibleItems": [
+                                    {
+                                        "$type": "ZoneItem",
+                                        "chance": 1,
+                                        "itemName": "",
+                                        "type": 5
+                                    }
+                                ]
+                            }
+                        ],
+                        "wheelsSlotSettings": {
+                            "$type": "ConsumablesSlot",
+                            "chance": 1,
+                            "quantity": 2,
+                            "tradeFromTruckToZone": false
+                        },
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "Airdrop down on the flat. Let's crack it open.",
+                            "discoveryRewardMoney": {
+                                "$type": "ObjectiveRewardMoney",
+                                "amount": 1000
+                            },
+                            "requiredSpecialistBinocular": 6,
+                            "requiredSpecialistDrone": 6,
+                            "state": 0
+                        }
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "fake zone 2",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyInventoryStorage": {
+                        "$type": "ZonePropertyInventoryStorage",
+                        "allowPutConsumablesToHeavyInv": false,
+                        "alwaysSpawn": true,
+                        "capacity": 4,
+                        "electroSlotSettings": null,
+                        "expandedConsumablesCapacity": 2,
+                        "fuelSlotSettings": null,
+                        "heavyInvCapacity": 0,
+                        "isAffectedByAdditionalAirdropResourcesAbility": false,
+                        "isAffectedByAdditionalOutpostResourcesAbility": false,
+                        "isAffectedByZoneSettings": true,
+                        "isAtDeployZone": false,
+                        "isModelBreakageQuestProp": false,
+                        "isShown": true,
+                        "model": null,
+                        "repairsSlotSettings": null,
+                        "slotsSettings": [
+                            {
+                                "$type": "ZoneItemSlot",
+                                "possibleItems": [
+                                    {
+                                        "$type": "ZoneItem",
+                                        "chance": 1,
+                                        "itemName": "Eagle_Egg",
+                                        "type": 14
+                                    }
+                                ]
+                            }
+                        ],
+                        "wheelsSlotSettings": null,
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "Eagle's nest up there. Grab the eggs.",
+                            "discoveryRewardMoney": {
+                                "$type": "ObjectiveRewardMoney",
+                                "amount": 10000
+                            },
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "fake zone 3",
+                "needToShow": true,
+                "props": {
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "mod 1",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyInventoryStorage": {
+                        "$type": "ZonePropertyInventoryStorage",
+                        "allowPutConsumablesToHeavyInv": false,
+                        "alwaysSpawn": true,
+                        "capacity": 6,
+                        "electroSlotSettings": null,
+                        "expandedConsumablesCapacity": 2,
+                        "fuelSlotSettings": null,
+                        "heavyInvCapacity": 0,
+                        "isAffectedByAdditionalAirdropResourcesAbility": false,
+                        "isAffectedByAdditionalOutpostResourcesAbility": false,
+                        "isAffectedByZoneSettings": true,
+                        "isAtDeployZone": false,
+                        "isModelBreakageQuestProp": false,
+                        "isShown": true,
+                        "model": null,
+                        "repairsSlotSettings": null,
+                        "slotsSettings": [
+                            {
+                                "$type": "ZoneItemSlot",
+                                "possibleItems": [
+                                    {
+                                        "$type": "ZoneItem",
+                                        "chance": 1,
+                                        "itemName": "Anchor_not_removable",
+                                        "type": 4
+                                    }
+                                ]
+                            }
+                        ],
+                        "wheelsSlotSettings": null,
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "Pad 1: stocked with a real named item.",
+                            "discoveryRewardMoney": null,
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "mod 2",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyInventoryStorage": {
+                        "$type": "ZonePropertyInventoryStorage",
+                        "allowPutConsumablesToHeavyInv": false,
+                        "alwaysSpawn": true,
+                        "capacity": 6,
+                        "electroSlotSettings": null,
+                        "expandedConsumablesCapacity": 2,
+                        "fuelSlotSettings": null,
+                        "heavyInvCapacity": 0,
+                        "isAffectedByAdditionalAirdropResourcesAbility": false,
+                        "isAffectedByAdditionalOutpostResourcesAbility": false,
+                        "isAffectedByZoneSettings": true,
+                        "isAtDeployZone": false,
+                        "isModelBreakageQuestProp": false,
+                        "isShown": true,
+                        "model": null,
+                        "repairsSlotSettings": null,
+                        "slotsSettings": [
+                            {
+                                "$type": "ZoneItemSlot",
+                                "possibleItems": [
+                                    {
+                                        "$type": "ZoneItem",
+                                        "chance": 1,
+                                        "itemName": "Anchor_not_removable",
+                                        "type": 4
+                                    }
+                                ]
+                            }
+                        ],
+                        "wheelsSlotSettings": null,
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "Pad 2: same, for the Task.",
+                            "discoveryRewardMoney": null,
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "mod 3",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyInventoryStorage": {
+                        "$type": "ZonePropertyInventoryStorage",
+                        "allowPutConsumablesToHeavyInv": false,
+                        "alwaysSpawn": true,
+                        "capacity": 6,
+                        "electroSlotSettings": null,
+                        "expandedConsumablesCapacity": 2,
+                        "fuelSlotSettings": null,
+                        "heavyInvCapacity": 0,
+                        "isAffectedByAdditionalAirdropResourcesAbility": false,
+                        "isAffectedByAdditionalOutpostResourcesAbility": false,
+                        "isAffectedByZoneSettings": true,
+                        "isAtDeployZone": false,
+                        "isModelBreakageQuestProp": false,
+                        "isShown": true,
+                        "model": null,
+                        "repairsSlotSettings": null,
+                        "slotsSettings": [
+                            {
+                                "$type": "ZoneItemSlot",
+                                "possibleItems": [
+                                    {
+                                        "$type": "ZoneItem",
+                                        "chance": 1,
+                                        "itemName": "",
+                                        "type": 4
+                                    }
+                                ]
+                            }
+                        ],
+                        "wheelsSlotSettings": null,
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "Pad 3: NEGATIVE CONTROL, blank itemName as every DbD slot is.",
+                            "discoveryRewardMoney": null,
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "mod a",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyBaseBuilding": {
+                        "$type": "ZonePropertyBaseBuilding",
+                        "isAffectedByZoneSettings": true,
+                        "isShown": true,
+                        "modelPlacementZone": {
+                            "$type": "ZoneGlobalIdentificator",
+                            "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 1"
+                        },
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "",
+                            "discoveryRewardMoney": null,
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    },
+                    "ZonePropertyTaskGiver": {
+                        "$type": "ZonePropertyTaskGiver",
+                        "isAffectedByZoneSettings": true,
+                        "isShown": true,
+                        "zoneDiscoverability": null
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "mod b",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyBaseBuilding": {
+                        "$type": "ZonePropertyBaseBuilding",
+                        "isAffectedByZoneSettings": true,
+                        "isShown": true,
+                        "modelPlacementZone": {
+                            "$type": "ZoneGlobalIdentificator",
+                            "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 2"
+                        },
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "",
+                            "discoveryRewardMoney": null,
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "mod c",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyBaseBuilding": {
+                        "$type": "ZonePropertyBaseBuilding",
+                        "isAffectedByZoneSettings": true,
+                        "isShown": true,
+                        "modelPlacementZone": {
+                            "$type": "ZoneGlobalIdentificator",
+                            "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 3"
+                        },
+                        "zoneDiscoverability": {
+                            "$type": "ZoneDiscoveryState",
+                            "discoverableByBinocular": true,
+                            "discoverableByDrone": true,
+                            "discoverableByTruck": true,
+                            "discoveryMessage": "",
+                            "discoveryRewardMoney": null,
+                            "requiredSpecialistBinocular": 1,
+                            "requiredSpecialistDrone": 1,
+                            "state": 0
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "isEnableDevMenu": false,
+    "isIgnoreCountryPurchaseBlock": false
+}

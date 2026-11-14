@@ -11,7 +11,7 @@ same on-disk shape, so one resolver serves both:
 NOTHING HERE MAY BE HARDCODED TO ONE MACHINE OR ONE PERSON. This module exists
 because the package previously carried
 
-    MEDIA = Path(r"C:/Users/Daladim/Documents/My Games/Expeditions/Media")
+    MEDIA = Path(r"C:/Users/<name>/Documents/My Games/Expeditions/Media")
 
 an absolute path with a username in it, in the module every other tool imports.
 That works on exactly one computer.

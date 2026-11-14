@@ -158,7 +158,7 @@ def ensure_templates(media: Path, game: str | None = None) -> list[str]:
 def prebuild_target(base: str, folder: str, media: Path) -> Path:
     """Where the editor writes the converted mesh. See reason 1 in the module
     docstring -- this is not a free choice."""
-    return media / "prebuild" / "meshes" / f"{folder}_{base}"
+    return media / "prebuild" / "meshes" / f"{folder.replace('/', '_')}_{base}"
 
 
 def stage_billboards(base: str, folder: str, media: Path) -> list[str]:

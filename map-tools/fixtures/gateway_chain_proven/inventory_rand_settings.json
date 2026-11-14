@@ -1,0 +1,8 @@
+{
+    "SslType": "InventoryRandomizerSettings",
+    "SslValue": {
+        "additionalLoot": [],
+        "maxInventoryZones": 12,
+        "name": "inventorySettings"
+    }
+}

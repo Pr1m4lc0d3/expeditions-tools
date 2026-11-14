@@ -1,0 +1,1167 @@
+{
+    "ExternalData": [
+    ],
+    "SslType": "ObjectiveSettings",
+    "SslValue": {
+        "contractsSettings": [
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "reward will be given.",
+                "difficulty": 0,
+                "employer": "ExpeditionsInc",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "Build camp",
+                "prepayment": 99999,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                    "ObjectiveRewardMoney": {
+                        "$type": "ObjectiveRewardMoney",
+                        "amount": 5000
+                    },
+                    "ObjectiveRewardOpenZoneProperties": {
+                        "$type": "ObjectiveRewardOpenZoneProperties",
+                        "zoneSettings": {
+                            "ZonePropertiesSettingsObjectiveReward": {
+                                "$type": "ZonePropertiesSettingsObjectiveReward",
+                                "mapId": "~#@%$`*level_objectives~#@%$`*",
+                                "props": {
+                                    "ZonePropertyDeploy": {
+                                        "$type": "ZonePropertyDeploy",
+                                        "defaultDeployPoint": false,
+                                        "deployCostMultiplier": 1,
+                                        "fobModulesZones": [
+                                            {
+                                                "$type": "FieldModulePlacementZones",
+                                                "moduleInteractionZone": {
+                                                    "$type": "ZoneGlobalIdentificator",
+                                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod a"
+                                                },
+                                                "modulePlacementZone": {
+                                                    "$type": "ZoneGlobalIdentificator",
+                                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 1"
+                                                }
+                                            },
+                                            {
+                                                "$type": "FieldModulePlacementZones",
+                                                "moduleInteractionZone": {
+                                                    "$type": "ZoneGlobalIdentificator",
+                                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod b"
+                                                },
+                                                "modulePlacementZone": {
+                                                    "$type": "ZoneGlobalIdentificator",
+                                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 2"
+                                                }
+                                            },
+                                            {
+                                                "$type": "FieldModulePlacementZones",
+                                                "moduleInteractionZone": {
+                                                    "$type": "ZoneGlobalIdentificator",
+                                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod c"
+                                                },
+                                                "modulePlacementZone": {
+                                                    "$type": "ZoneGlobalIdentificator",
+                                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 3"
+                                                }
+                                            }
+                                        ],
+                                        "fogOfWarUnlockRadius": 100,
+                                        "fogOfWarUnlockRadiusTransparent": 150,
+                                        "isAffectedByZoneSettings": true,
+                                        "isShown": true,
+                                        "mainBaseModuleInteractionZone": {
+                                            "$type": "ZoneGlobalIdentificator",
+                                            "globalZoneId": "~#@%$`*level_objectives~#@%$`* || FOB"
+                                        },
+                                        "maxTrucksNum": 1,
+                                        "model": null,
+                                        "supplyShopModuleInteractionZone": {
+                                            "$type": "ZoneGlobalIdentificator",
+                                            "globalZoneId": "~#@%$`*level_objectives~#@%$`* || FOB"
+                                        },
+                                        "warningRadius": 5,
+                                        "zoneDiscoverability": null
+                                    }
+                                },
+                                "zoneId": "FOB"
+                            }
+                        }
+                    }
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": {
+                            "$type": "VisitAllZonesSettings",
+                            "notification": null,
+                            "radiusSett": null,
+                            "zones": [
+                                {
+                                    "$type": "TaskSettingVisitZone",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                        {
+                                            "$type": "FakeZoneSett",
+                                            "globalZoneId": {
+                                                "$type": "ZoneGlobalIdentificator",
+                                                "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 1"
+                                            },
+                                            "notification": {
+                                                "$type": "NotificationBase",
+                                                "image": "",
+                                                "textFrames": [
+                                                    "Too rough!"
+                                                ],
+                                                "timeout": 0
+                                            },
+                                            "radiusSett": null
+                                        },
+                                        {
+                                            "$type": "FakeZoneSett",
+                                            "globalZoneId": {
+                                                "$type": "ZoneGlobalIdentificator",
+                                                "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 2"
+                                            },
+                                            "notification": {
+                                                "$type": "NotificationBase",
+                                                "image": "",
+                                                "textFrames": [
+                                                    "Too wooded!"
+                                                ],
+                                                "timeout": 0
+                                            },
+                                            "radiusSett": null
+                                        },
+                                        {
+                                            "$type": "FakeZoneSett",
+                                            "globalZoneId": {
+                                                "$type": "ZoneGlobalIdentificator",
+                                                "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 3"
+                                            },
+                                            "notification": {
+                                                "$type": "NotificationBase",
+                                                "image": "",
+                                                "textFrames": [
+                                                    "Too boring!"
+                                                ],
+                                                "timeout": 0
+                                            },
+                                            "radiusSett": null
+                                        }
+                                    ],
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || FOB"
+                                    },
+                                    "mayVisitZoneWithDrone": false,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "This looks perfect!"
+                                        ],
+                                        "timeout": 0
+                                    },
+                                    "radiusSett": null,
+                                    "truckUid": "",
+                                    "uiDesc": "find a suitable campsite",
+                                    "visitWithDroneOnly": false
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "tips": [
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Build a forward operating base.",
+                "uiMinimapScreenshot": "minimap",
+                "wayLength": 0
+            },
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "",
+                "difficulty": 0,
+                "employer": "TVCompany",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "Free Roam",
+                "prepayment": 0,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": {
+                            "$type": "FreeRoamSettings",
+                            "map": "",
+                            "uiDesc": "Free Roam, Baby!"
+                        },
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "tips": [
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "",
+                "uiMinimapScreenshot": "mapAllLocked",
+                "wayLength": 0
+            },
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 0,
+                "customMessage": "",
+                "description": "money!",
+                "difficulty": 0,
+                "employer": "TVCompany",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "deliver truck",
+                "prepayment": 5000,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                    "ObjectiveRewardMoney": {
+                        "$type": "ObjectiveRewardMoney",
+                        "amount": 5000
+                    }
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                            {
+                                "$type": "TruckDeliverySettings",
+                                "additionalDeliveryZones": [
+                                ],
+                                "afterStageFinished": 0,
+                                "globalZoneDeliveryId": {
+                                    "$type": "ZoneGlobalIdentificator",
+                                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || FOB"
+                                },
+                                "isListeningTruckOnly": false,
+                                "mustDestroyAfterSubstage": false,
+                                "notification": {
+                                    "$type": "NotificationBase",
+                                    "image": "",
+                                    "textFrames": [
+                                        "Thank you!"
+                                    ],
+                                    "timeout": 0
+                                },
+                                "radiusSett": null,
+                                "truckDeliveryEffects": null,
+                                "truckId": "lo4f",
+                                "truckUiName": "lo4f",
+                                "uiDesc": "Deliver Lo4f to base"
+                            }
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "tips": [
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Deliver the truck to base camp",
+                "uiMinimapScreenshot": "mapAllLocked",
+                "wayLength": 0
+            },
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "Three stages: reach the FOB, recover an anchor from the first module pad, bring it back.",
+                "difficulty": 0,
+                "employer": "ExpeditionsInc",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "ZZ Shakedown",
+                "prepayment": 99999,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                    "ObjectiveRewardMoney": {
+                        "$type": "ObjectiveRewardMoney",
+                        "amount": 15000
+                    }
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": {
+                            "$type": "VisitAllZonesSettings",
+                            "notification": null,
+                            "radiusSett": {
+                                "$type": "ZoneRadiusSettings",
+                                "forceOffset": true,
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "zoneRadius": 200
+                            },
+                            "zones": [
+                                {
+                                    "$type": "TaskSettingVisitZone",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                        {
+                                            "$type": "FakeZoneSett",
+                                            "globalZoneId": {
+                                                "$type": "ZoneGlobalIdentificator",
+                                                "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 1"
+                                            },
+                                            "notification": {
+                                                "$type": "NotificationBase",
+                                                "image": "",
+                                                "textFrames": [
+                                                    "Wrong pad."
+                                                ],
+                                                "timeout": 0
+                                            },
+                                            "radiusSett": null
+                                        },
+                                        {
+                                            "$type": "FakeZoneSett",
+                                            "globalZoneId": {
+                                                "$type": "ZoneGlobalIdentificator",
+                                                "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 2"
+                                            },
+                                            "notification": {
+                                                "$type": "NotificationBase",
+                                                "image": "",
+                                                "textFrames": [
+                                                    "Not this one either."
+                                                ],
+                                                "timeout": 0
+                                            },
+                                            "radiusSett": null
+                                        }
+                                    ],
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || FOB"
+                                    },
+                                    "mayVisitZoneWithDrone": false,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "You made it to Deadwood Oasis. This is a great place to set up shop!"
+                                        ],
+                                        "timeout": 10
+                                    },
+                                    "radiusSett": null,
+                                    "truckUid": "",
+                                    "uiDesc": "Stage 1 of 3: reach the FOB.",
+                                    "visitWithDroneOnly": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": {
+                            "$type": "TakeInventoryPackSettings",
+                            "zoneToTakeInvFrom": [
+                                {
+                                    "$type": "TakeInventorySettings",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                    ],
+                                    "inventoryToTake": [
+                                        {
+                                            "$type": "InventoryPack",
+                                            "count": 1,
+                                            "invId": "Anchor_not_removable",
+                                            "type": 4
+                                        }
+                                    ],
+                                    "model": null,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "Got it."
+                                        ],
+                                        "timeout": 10
+                                    },
+                                    "radiusSett": null,
+                                    "uiDesc": "Stage 2 of 3: recover the anchor from pad 1.",
+                                    "zoneGlobalId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 1"
+                                    }
+                                }
+                            ]
+                        },
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    },
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": {
+                            "$type": "ObjectConstructionPackSettings",
+                            "notification": {
+                                "$type": "NotificationBase",
+                                "image": "",
+                                "textFrames": [
+                                    "Stage chain complete."
+                                ],
+                                "timeout": 10
+                            },
+                            "radiusSett": null,
+                            "zoneToFill": [
+                                {
+                                    "$type": "ObjectConstructionZoneSetting",
+                                    "OptionalToPerform": false,
+                                    "additionalUnloadZones": [
+                                    ],
+                                    "electroNum": 0,
+                                    "fakeZones": [
+                                    ],
+                                    "fuelNum": 0,
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || FOB"
+                                    },
+                                    "inventories": {
+                                    },
+                                    "inventory": {
+                                        "$type": "InventoryPack",
+                                        "count": 1,
+                                        "invId": "Anchor_not_removable",
+                                        "type": 4
+                                    },
+                                    "model": null,
+                                    "modelPlacementZones": [
+                                    ],
+                                    "notification": null,
+                                    "radiusSett": null,
+                                    "repairsNum": 0,
+                                    "uiDesc": "Stage 3 of 3: deliver the anchor to the FOB."
+                                }
+                            ]
+                        },
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "tips": [
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Three stages: reach the FOB, recover an anchor from the first module pad, bring it back.",
+                "uiMinimapScreenshot": "minimap",
+                "wayLength": 0
+            },
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "Contract path: no giver zone.",
+                "difficulty": 0,
+                "employer": "ExpeditionsInc",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "ZZ Egg Contract",
+                "prepayment": 1000,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                    "ObjectiveRewardMoney": {
+                        "$type": "ObjectiveRewardMoney",
+                        "amount": 5000
+                    }
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": {
+                            "$type": "TakeInventoryPackSettings",
+                            "zoneToTakeInvFrom": [
+                                {
+                                    "$type": "TakeInventorySettings",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                    ],
+                                    "inventoryToTake": [
+                                        {
+                                            "$type": "InventoryPack",
+                                            "count": 3,
+                                            "invId": "Eagle_Egg",
+                                            "type": 14
+                                        }
+                                    ],
+                                    "model": null,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "Eggs aboard."
+                                        ],
+                                        "timeout": 10
+                                    },
+                                    "radiusSett": null,
+                                    "uiDesc": "Take 3 Eagle eggs from the nest.",
+                                    "zoneGlobalId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 2"
+                                    }
+                                }
+                            ]
+                        },
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    },
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": {
+                            "$type": "ObjectConstructionPackSettings",
+                            "notification": {
+                                "$type": "NotificationBase",
+                                "image": "",
+                                "textFrames": [
+                                    "Enjoy your omelet!"
+                                ],
+                                "timeout": 10
+                            },
+                            "radiusSett": null,
+                            "zoneToFill": [
+                                {
+                                    "$type": "ObjectConstructionZoneSetting",
+                                    "OptionalToPerform": false,
+                                    "additionalUnloadZones": [
+                                    ],
+                                    "electroNum": 0,
+                                    "fakeZones": [
+                                    ],
+                                    "fuelNum": 0,
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || deploy"
+                                    },
+                                    "inventories": {
+                                    },
+                                    "inventory": {
+                                        "$type": "InventoryPack",
+                                        "count": 3,
+                                        "invId": "Eagle_Egg",
+                                        "type": 14
+                                    },
+                                    "model": null,
+                                    "modelPlacementZones": [
+                                    ],
+                                    "notification": null,
+                                    "radiusSett": null,
+                                    "repairsNum": 0,
+                                    "uiDesc": "Deliver 3 Eagle eggs to the deploy point."
+                                }
+                            ]
+                        },
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                            "ObjectiveRewardMoney": {
+                                "$type": "ObjectiveRewardMoney",
+                                "amount": 1000
+                            }
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "tips": [
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Grab 3 eagle eggs and bring them back.",
+                "uiMinimapScreenshot": "minimap",
+                "wayLength": 0
+            }
+        ],
+        "employer": [
+        ],
+        "name": "objectiveSettings",
+        "tasksSettings": [
+            {
+                "$type": "TaskSettings",
+                "additionalTaskGivers": [
+                ],
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "customMessage": "",
+                "description": "A short two-stage task.",
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "ZZ Salvage Run",
+                "recommendedTruck": 0,
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                    "ObjectiveRewardMoney": {
+                        "$type": "ObjectiveRewardMoney",
+                        "amount": 6000
+                    }
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": {
+                            "$type": "TakeInventoryPackSettings",
+                            "zoneToTakeInvFrom": [
+                                {
+                                    "$type": "TakeInventorySettings",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                    ],
+                                    "inventoryToTake": [
+                                        {
+                                            "$type": "InventoryPack",
+                                            "count": 1,
+                                            "invId": "Anchor_not_removable",
+                                            "type": 4
+                                        }
+                                    ],
+                                    "model": null,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "Loaded."
+                                        ],
+                                        "timeout": 10
+                                    },
+                                    "radiusSett": null,
+                                    "uiDesc": "Take the anchor from pad 2.",
+                                    "zoneGlobalId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod 2"
+                                    }
+                                }
+                            ]
+                        },
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    },
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": {
+                            "$type": "ObjectConstructionPackSettings",
+                            "notification": {
+                                "$type": "NotificationBase",
+                                "image": "",
+                                "textFrames": [
+                                    "Task complete."
+                                ],
+                                "timeout": 10
+                            },
+                            "radiusSett": null,
+                            "zoneToFill": [
+                                {
+                                    "$type": "ObjectConstructionZoneSetting",
+                                    "OptionalToPerform": false,
+                                    "additionalUnloadZones": [
+                                    ],
+                                    "electroNum": 0,
+                                    "fakeZones": [
+                                    ],
+                                    "fuelNum": 0,
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || deploy"
+                                    },
+                                    "inventories": {
+                                    },
+                                    "inventory": {
+                                        "$type": "InventoryPack",
+                                        "count": 1,
+                                        "invId": "Anchor_not_removable",
+                                        "type": 4
+                                    },
+                                    "model": null,
+                                    "modelPlacementZones": [
+                                    ],
+                                    "notification": null,
+                                    "radiusSett": null,
+                                    "repairsNum": 0,
+                                    "uiDesc": "Drop it at the deploy point."
+                                }
+                            ]
+                        },
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "taskGiverZone": {
+                    "$type": "ZoneGlobalIdentificator",
+                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod a"
+                },
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Pull the anchor off pad 2 and drop it at the deploy point."
+            },
+            {
+                "$type": "TaskSettings",
+                "additionalTaskGivers": [
+                ],
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "customMessage": "",
+                "description": "Task path: giver zone 'mod a'.",
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "ZZ Egg Task",
+                "recommendedTruck": 0,
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                    "ContestResultRewards": {
+                        "$type": "ContestResultRewards",
+                        "amount": 5000,
+                        "timeLimit": 600
+                    }
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": {
+                            "$type": "TakeInventoryPackSettings",
+                            "zoneToTakeInvFrom": [
+                                {
+                                    "$type": "TakeInventorySettings",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                    ],
+                                    "inventoryToTake": [
+                                        {
+                                            "$type": "InventoryPack",
+                                            "count": 3,
+                                            "invId": "Eagle_Egg",
+                                            "type": 14
+                                        }
+                                    ],
+                                    "model": null,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "Eggs aboard."
+                                        ],
+                                        "timeout": 10
+                                    },
+                                    "radiusSett": null,
+                                    "uiDesc": "Take 3 Eagle eggs from the nest.",
+                                    "zoneGlobalId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || fake zone 2"
+                                    }
+                                }
+                            ]
+                        },
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    },
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": {
+                            "$type": "ObjectConstructionPackSettings",
+                            "notification": {
+                                "$type": "NotificationBase",
+                                "image": "",
+                                "textFrames": [
+                                    "Enjoy your omelet!"
+                                ],
+                                "timeout": 10
+                            },
+                            "radiusSett": null,
+                            "zoneToFill": [
+                                {
+                                    "$type": "ObjectConstructionZoneSetting",
+                                    "OptionalToPerform": false,
+                                    "additionalUnloadZones": [
+                                    ],
+                                    "electroNum": 0,
+                                    "fakeZones": [
+                                    ],
+                                    "fuelNum": 0,
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_objectives~#@%$`* || deploy"
+                                    },
+                                    "inventories": {
+                                    },
+                                    "inventory": {
+                                        "$type": "InventoryPack",
+                                        "count": 3,
+                                        "invId": "Eagle_Egg",
+                                        "type": 14
+                                    },
+                                    "model": null,
+                                    "modelPlacementZones": [
+                                    ],
+                                    "notification": null,
+                                    "radiusSett": null,
+                                    "repairsNum": 0,
+                                    "uiDesc": "Deliver 3 Eagle eggs to the deploy point."
+                                }
+                            ]
+                        },
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                            "ObjectiveRewardMoney": {
+                                "$type": "ObjectiveRewardMoney",
+                                "amount": 1000
+                            }
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "taskGiverZone": {
+                    "$type": "ZoneGlobalIdentificator",
+                    "globalZoneId": "~#@%$`*level_objectives~#@%$`* || mod a"
+                },
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Grab 3 eagle eggs and bring them back."
+            }
+        ]
+    }
+}

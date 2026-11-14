@@ -1,0 +1,219 @@
+{
+    "SslType": "ZoneDescStorageContainerBase",
+    "SslValue": {
+        "data": {
+            "mod_region": {
+                "mapDescs": [
+                    {
+                        "birdsMultiplier": 0.5,
+                        "caveSettings": {
+                            "$type": "CaveSettings",
+                            "isCave": false,
+                            "surfaceMapID": "",
+                            "truckUncloakRadius": 0,
+                            "truckUncloakTranspRadius": 0
+                        },
+                        "indexInRegion": 0,
+                        "isNeedToBeCloacked": false,
+                        "name": "~#@%$`*level_gate_one~#@%$`*",
+                        "noFlyZone": -1.0,
+                        "uiFuelConsumptionModifier": 1.0,
+                        "uiImages": [],
+                        "zoneDesc": [
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "deploy",
+                                "needToShow": true,
+                                "props": {
+                                    "ZonePropertyDeploy": {
+                                        "$type": "ZonePropertyDeploy",
+                                        "defaultDeployPoint": true,
+                                        "deployCostMultiplier": 1,
+                                        "fobModulesZones": [],
+                                        "fogOfWarUnlockRadius": 100,
+                                        "fogOfWarUnlockRadiusTransparent": 150,
+                                        "isAffectedByZoneSettings": true,
+                                        "isShown": true,
+                                        "mainBaseModuleInteractionZone": null,
+                                        "maxTrucksNum": 1,
+                                        "model": null,
+                                        "supplyShopModuleInteractionZone": null,
+                                        "warningRadius": 5,
+                                        "zoneDiscoverability": null
+                                    }
+                                }
+                            },
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "gate_one",
+                                "needToShow": true,
+                                "props": {
+                                    "ZonePropertyGateway": {
+                                        "$type": "ZonePropertyGateway",
+                                        "animationTime": 3000,
+                                        "cameraDir": {
+                                            "x": 1,
+                                            "y": 0,
+                                            "z": 0
+                                        },
+                                        "cameraPos": {
+                                            "x": 40.473,
+                                            "y": 120,
+                                            "z": -46.652
+                                        },
+                                        "extraZoneToPlaceTrucks": "",
+                                        "extraZoneToPlaceWinch": "",
+                                        "finishDelayTime": 0,
+                                        "isAffectedByZoneSettings": true,
+                                        "isCave": false,
+                                        "isHidden": false,
+                                        "isShown": true,
+                                        "levelZoneLink": "mod_level_gate_two || gate_two",
+                                        "startDelayTime": 0,
+                                        "zoneDiscoverability": null
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "birdsMultiplier": 0.5,
+                        "caveSettings": {
+                            "$type": "CaveSettings",
+                            "isCave": false,
+                            "surfaceMapID": "",
+                            "truckUncloakRadius": 0,
+                            "truckUncloakTranspRadius": 0
+                        },
+                        "indexInRegion": 1,
+                        "inventorySettings": {
+                            "$type": "InventoryRandomizerSettings",
+                            "additionalLoot": [],
+                            "maxInventoryZones": 12
+                        },
+                        "isNeedToBeCloacked": true,
+                        "modId": "mod_gateway_test",
+                        "name": "~#@%$`*level_gate_two~#@%$`*",
+                        "noFlyZone": -1.0,
+                        "uiFuelConsumptionModifier": 1.0,
+                        "uiImages": [],
+                        "zoneDesc": [
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "deploy",
+                                "needToShow": true,
+                                "props": {
+                                    "ZonePropertyDeploy": {
+                                        "$type": "ZonePropertyDeploy",
+                                        "defaultDeployPoint": true,
+                                        "deployCostMultiplier": 1,
+                                        "fobModulesZones": [],
+                                        "fogOfWarUnlockRadius": 100,
+                                        "fogOfWarUnlockRadiusTransparent": 150,
+                                        "isAffectedByZoneSettings": true,
+                                        "isShown": true,
+                                        "mainBaseModuleInteractionZone": null,
+                                        "maxTrucksNum": 1,
+                                        "model": null,
+                                        "supplyShopModuleInteractionZone": null,
+                                        "warningRadius": 5,
+                                        "zoneDiscoverability": {
+                                            "$type": "ZoneDiscoveryState",
+                                            "discoverableByBinocular": true,
+                                            "discoverableByDrone": true,
+                                            "discoverableByTruck": true,
+                                            "discoveryMessage": "Gate Two camp found.",
+                                            "discoveryRewardMoney": null,
+                                            "requiredSpecialistBinocular": 6,
+                                            "requiredSpecialistDrone": 6,
+                                            "state": 0
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "gate_two",
+                                "needToShow": true,
+                                "props": {
+                                    "ZonePropertyGateway": {
+                                        "$type": "ZonePropertyGateway",
+                                        "animationTime": 3000,
+                                        "cameraDir": {
+                                            "x": 1,
+                                            "y": 0,
+                                            "z": 0
+                                        },
+                                        "cameraPos": {
+                                            "x": 40.473,
+                                            "y": 120,
+                                            "z": -46.652
+                                        },
+                                        "extraZoneToPlaceTrucks": "",
+                                        "extraZoneToPlaceWinch": "",
+                                        "finishDelayTime": 0,
+                                        "isAffectedByZoneSettings": true,
+                                        "isCave": false,
+                                        "isHidden": false,
+                                        "isShown": true,
+                                        "levelZoneLink": "mod_level_gate_one || gate_one",
+                                        "startDelayTime": 0,
+                                        "zoneDiscoverability": null
+                                    }
+                                }
+                            },
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "base_site",
+                                "needToShow": true,
+                                "props": {}
+                            },
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "base_mod_a",
+                                "needToShow": true,
+                                "props": {
+                                    "ZonePropertyBaseBuilding": {
+                                        "$type": "ZonePropertyBaseBuilding",
+                                        "isAffectedByZoneSettings": true,
+                                        "isShown": true,
+                                        "modelPlacementZone": {
+                                            "$type": "ZoneGlobalIdentificator",
+                                            "globalZoneId": "~#@%$`*level_gate_two~#@%$`* || base_mod_1"
+                                        },
+                                        "zoneDiscoverability": null
+                                    }
+                                }
+                            },
+                            {
+                                "$type": "ZoneSettings",
+                                "isForCoop": false,
+                                "name": "base_mod_1",
+                                "needToShow": true,
+                                "props": {}
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "regions": [
+            {
+                "country": "US",
+                "name": "mod_region",
+                "uiInfo": {
+                    "globalMapRegionBackground": "",
+                    "globalMapRegionIcon": "",
+                    "uiDesc": "Test region for map transitions",
+                    "uiName": "Gate Test"
+                }
+            }
+        ]
+    }
+}

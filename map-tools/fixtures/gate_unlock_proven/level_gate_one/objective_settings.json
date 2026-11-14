@@ -1,0 +1,203 @@
+{
+    "ExternalData": [
+    ],
+    "SslType": "ObjectiveSettings",
+    "SslValue": {
+        "contractsSettings": [
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "Gate One",
+                "difficulty": 1,
+                "employer": "ExpeditionsInc",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "Gate One Free Roam",
+                "prepayment": 0,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": {
+                            "$type": "FreeRoamSettings",
+                            "map": "~#@%$`*level_gate_one~#@%$`*",
+                            "uiDesc": "Gate One"
+                        },
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": null
+                    }
+                ],
+                "tips": [
+                    4,
+                    0,
+                    3,
+                    8
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Gate One",
+                "uiMinimapScreenshot": "mapAllLocked",
+                "wayLength": 500
+            },
+            {
+                "$type": "ContractSettings",
+                "blockerMap": "",
+                "blockerObjectives": [
+                ],
+                "bonusRewards": {
+                },
+                "contractMap": "",
+                "contractType": 1,
+                "customMessage": "",
+                "description": "Drive to the gate.",
+                "difficulty": 1,
+                "employer": "ExpeditionsInc",
+                "failReasons": {
+                },
+                "forcedDaytime": null,
+                "isCoop": false,
+                "isMarkersDisabled": false,
+                "isNeedRaceMusic": false,
+                "isNotSkippable": false,
+                "isRepeatable": false,
+                "isSilentReward": false,
+                "isTutorial": false,
+                "minimapList": 0,
+                "model": null,
+                "name": "Find the Gate",
+                "prepayment": 0,
+                "recommendedDeployZone": "",
+                "recommendedTruck": 0,
+                "region": "mod_region",
+                "replayabilityResetModels": [
+                ],
+                "requiredInventory": [
+                ],
+                "requiredSpecialities": [
+                ],
+                "requiredTruckAddons": [
+                ],
+                "rewards": {
+                },
+                "sandboxObjetive": false,
+                "stages": [
+                    {
+                        "$type": "ObjectiveStage",
+                        "cutsceneInfo": null,
+                        "freeRoamInfo": null,
+                        "makeActionInZone": null,
+                        "minigameInfo": null,
+                        "needCreateOverlay": false,
+                        "objectConstruction": null,
+                        "objectInteraction": null,
+                        "otherMapGatewaySelectionSettings": null,
+                        "puzzleInfo": null,
+                        "rewards": {
+                        },
+                        "scoutingInfo": null,
+                        "takeInventory": null,
+                        "truckDelivery": [
+                        ],
+                        "tutorialViewsOnCompleteStage": null,
+                        "visitAllZones": {
+                            "$type": "VisitAllZonesSettings",
+                            "notification": null,
+                            "radiusSett": {
+                                "$type": "ZoneRadiusSettings",
+                                "forceOffset": true,
+                                "offsetX": 0,
+                                "offsetY": 0,
+                                "zoneRadius": 30
+                            },
+                            "zones": [
+                                {
+                                    "$type": "TaskSettingVisitZone",
+                                    "OptionalToPerform": false,
+                                    "fakeZones": [
+                                    ],
+                                    "globalZoneId": {
+                                        "$type": "ZoneGlobalIdentificator",
+                                        "globalZoneId": "~#@%$`*level_gate_one~#@%$`* || gate_one"
+                                    },
+                                    "mayVisitZoneWithDrone": false,
+                                    "notification": {
+                                        "$type": "NotificationBase",
+                                        "image": "",
+                                        "textFrames": [
+                                            "You found the gate. Gate Two should now be open."
+                                        ],
+                                        "timeout": 10
+                                    },
+                                    "radiusSett": null,
+                                    "truckUid": "",
+                                    "uiDesc": "Reach the gate",
+                                    "visitWithDroneOnly": false
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "tips": [
+                    4,
+                    0,
+                    3,
+                    8
+                ],
+                "trucksWithoutForceGrounding": [
+                ],
+                "uiDesc": "Drive to the gate.",
+                "uiMinimapScreenshot": "mapAllLocked",
+                "wayLength": 500
+            }
+        ],
+        "employer": [
+        ],
+        "name": "objectiveSettings",
+        "tasksSettings": [
+        ]
+    }
+}

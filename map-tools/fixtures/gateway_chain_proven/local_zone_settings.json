@@ -1,0 +1,73 @@
+{
+    "ExternalData": [],
+    "SslValue": [
+        {
+            "name": "~#@%$`*level_gate_one~#@%$`*",
+            "zoneDesc": [
+                {
+                    "name": "gate_one",
+                    "props": {
+                        "ZonePropertyGateway": {
+                            "$type": "ZonePropertyGateway",
+                            "animationTime": 3000,
+                            "cameraDir": {
+                                "x": 1,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "cameraPos": {
+                                "x": 40.473,
+                                "y": 120,
+                                "z": -46.652
+                            },
+                            "extraZoneToPlaceTrucks": "",
+                            "extraZoneToPlaceWinch": "",
+                            "finishDelayTime": 0,
+                            "isAffectedByZoneSettings": true,
+                            "isCave": false,
+                            "isHidden": false,
+                            "isShown": true,
+                            "levelZoneLink": "mod_level_gate_two || gate_two",
+                            "startDelayTime": 0,
+                            "zoneDiscoverability": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "~#@%$`*level_gate_two~#@%$`*",
+            "zoneDesc": [
+                {
+                    "name": "gate_two",
+                    "props": {
+                        "ZonePropertyGateway": {
+                            "$type": "ZonePropertyGateway",
+                            "animationTime": 3000,
+                            "cameraDir": {
+                                "x": 1,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "cameraPos": {
+                                "x": 40.473,
+                                "y": 120,
+                                "z": -46.652
+                            },
+                            "extraZoneToPlaceTrucks": "",
+                            "extraZoneToPlaceWinch": "",
+                            "finishDelayTime": 0,
+                            "isAffectedByZoneSettings": true,
+                            "isCave": false,
+                            "isHidden": false,
+                            "isShown": true,
+                            "levelZoneLink": "mod_level_gate_one || gate_one",
+                            "startDelayTime": 0,
+                            "zoneDiscoverability": null
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

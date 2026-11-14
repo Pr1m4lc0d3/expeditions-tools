@@ -1,0 +1,23 @@
+{
+    "Country": "US",
+    "LevelList": [
+        {
+            "LevelName": "level_gate_one",
+            "LevelOrder": 1
+        },
+        {
+            "LevelName": "level_gate_two",
+            "LevelOrder": 2
+        }
+    ],
+    "Name": "gateway_test",
+    "SslType": "ModRegionUIDesc",
+    "SslValue": {
+        "globalMapRegionBackground": "",
+        "globalMapRegionIcon": ""
+    },
+    "UiDesc": "Test region for map transitions",
+    "UiName": "Gate Test",
+    "isEnableDevMenu": false,
+    "isIgnoreCountryPurchaseBlock": false
+}

@@ -1,0 +1,31 @@
+{
+    "region": "gateway_test",
+    "hidden_camps": ["level_gate_two"],
+    "objectives": [
+        {
+            "name": "Gate One Free Roam",
+            "map": "level_gate_one",
+            "free_roam": true,
+            "desc": "Gate One",
+            "fields": {"difficulty": 1, "wayLength": 500, "tips": [4, 0, 3, 8]}
+        },
+        {
+            "name": "Find the Gate",
+            "map": "level_gate_one",
+            "desc": "Drive to the gate.",
+            "fields": {"difficulty": 1, "wayLength": 500, "tips": [4, 0, 3, 8]},
+            "stages": [
+                {"visit": [{"zone": "gate_one", "text": "Reach the gate", "radius": 30,
+                            "message": "You found the gate. Gate Two should now be open."}]}
+            ]
+        },
+        {
+            "name": "Gate Two Free Roam",
+            "map": "level_gate_two",
+            "free_roam": true,
+            "desc": "Gate Two",
+            "after": ["Find the Gate"],
+            "fields": {"employer": "TVCompany"}
+        }
+    ]
+}

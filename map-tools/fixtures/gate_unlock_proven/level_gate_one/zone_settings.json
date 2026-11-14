@@ -1,0 +1,70 @@
+{
+    "SslType": "MapWithZonesDesc",
+    "SslValue": {
+        "isNeedToBeCloacked": false,
+        "name": "~#@%$`*level_gate_one~#@%$`*",
+        "zoneDesc": [
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "deploy",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyDeploy": {
+                        "$type": "ZonePropertyDeploy",
+                        "defaultDeployPoint": true,
+                        "deployCostMultiplier": 1,
+                        "fobModulesZones": [
+                        ],
+                        "fogOfWarUnlockRadius": 100,
+                        "fogOfWarUnlockRadiusTransparent": 150,
+                        "isAffectedByZoneSettings": true,
+                        "isShown": true,
+                        "mainBaseModuleInteractionZone": null,
+                        "maxTrucksNum": 1,
+                        "model": null,
+                        "supplyShopModuleInteractionZone": null,
+                        "warningRadius": 5,
+                        "zoneDiscoverability": null
+                    }
+                }
+            },
+            {
+                "$type": "ZoneSettings",
+                "isForCoop": false,
+                "name": "gate_one",
+                "needToShow": true,
+                "props": {
+                    "ZonePropertyGateway": {
+                        "$type": "ZonePropertyGateway",
+                        "animationTime": 3000,
+                        "cameraDir": {
+                            "$type": "Vector3d",
+                            "x": 1,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "cameraPos": {
+                            "$type": "Vector3d",
+                            "x": 40.473,
+                            "y": 120,
+                            "z": -46.652
+                        },
+                        "extraZoneToPlaceTrucks": "",
+                        "extraZoneToPlaceWinch": "",
+                        "finishDelayTime": 0,
+                        "isAffectedByZoneSettings": true,
+                        "isCave": false,
+                        "isHidden": false,
+                        "isShown": true,
+                        "levelZoneLink": "level_gate_two || gate_two",
+                        "startDelayTime": 0,
+                        "zoneDiscoverability": null
+                    }
+                }
+            }
+        ]
+    },
+    "isEnableDevMenu": false,
+    "isIgnoreCountryPurchaseBlock": false
+}
