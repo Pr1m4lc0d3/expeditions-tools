@@ -73,9 +73,13 @@ def body_tris(mesh_blob: bytes) -> np.ndarray:
         if any(k in name.lower() for k in SKIP_FRAMES):
             continue
         # a part stored in its own frame's local space (shocks, springs, fans sit round the origin in some
-        # mod meshes) is not where it shows on the truck: it dips below the ground, so leave it out
-        if bl and min(float(bb.positions[:, 1].min()) for bb in bl if len(bb.positions)) < -0.05:
-            continue
+        # mod meshes) is not where it shows on the truck: a SMALL frame that dips below the ground. (A whole
+        # truck merged into one frame can dip below ground too, through its tyres: keep that.)
+        pts = [bb.positions for bb in bl if len(bb.positions)]
+        if pts:
+            P = np.concatenate(pts)
+            if P[:, 1].min() < -0.05 and (P.max(0) - P.min(0)).max() < 1.0:
+                continue
         for b in bl:
             f = b.faces[(b.faces[:, 0] != b.faces[:, 1]) & (b.faces[:, 1] != b.faces[:, 2])]
             T.append(b.positions[f])

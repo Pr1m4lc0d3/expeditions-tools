@@ -19,6 +19,15 @@ Not affiliated with or endorsed by Saber Interactive.
 
 It is an ordinary command-line program. It does not use AI or the internet.
 
+**No Python?** Download **Rock Lights Tool.exe** from this repository's
+[Releases](https://github.com/Pr1m4lc0d3/expeditions-tools/releases) and double-click it. It asks
+which truck and does the rest, with the same options as below. It still needs Blender and the
+Expeditions editor installed. (`build_exe.py` builds it from this folder.)
+
+**Using an AI assistant?** Point it at [AGENTS.md](AGENTS.md) and say "add rock lights to my
+truck". The file tells it the whole job, step by step, with nothing left for you to do but check
+the truck in the garage.
+
 This folder shares the converter and game-finding code with the other tools, so keep it next
 to [`fob-modules`](../fob-modules/), as it is in the repository.
 
@@ -78,8 +87,11 @@ with it like any other add-on.
   Lights mod, checked in game on the trucks that came with the game.
 - On all 39 of those trucks, `pods.py` reproduces the released placement to the millimetre.
 - On installed truck mods, the output has been checked file by file: five add-ons, the slot, the
-  pods and their texture, and `--remove` giving back the original paks byte for byte. A truck
-  mod built with this tool has **not yet been checked in game**.
+  pods and their texture, and `--remove` giving back the original paks byte for byte.
+- **Checked in game on a truck mod** (November 2026): a tube-frame buggy from mod.io got its kits
+  from this tool; the pods showed in the garage and the lights came on.
+- It never touches the game's own files (`initial.pak`). Everything it writes goes into your
+  Media folder or into the truck mod's own paks.
 
 If a kit is listed and highlights in the garage but **Buy does nothing**, or the pods do not
 show while it is highlighted, the add-on's model setup is wrong. These kits carry no `<Body>`
