@@ -54,7 +54,8 @@ COLOURS = {   # key: (ui name, colour, multiplier) -- the values proven in game 
     "white": ("White", (235, 242, 255), 25.2),
     "amber": ("Amber", (255, 160, 30), 26.4),
     "red": ("Red", (255, 25, 15), 30.0),
-    "blue": ("Blue", (40, 90, 255), 30.0),
+    # 1.0.1: blue 30 -> 80. Pure blue reads darkest to the eye; at 30 it was the dimmest kit by far.
+    "blue": ("Blue", (40, 90, 255), 80.0),
     "green": ("Green", (40, 255, 70), 25.2),
 }
 ATLAS = [(24, 24, 26), (214, 218, 222)]   # 0 black powder coat, 1 frosted lens
